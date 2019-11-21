@@ -105,6 +105,7 @@ class PaymentsController extends Controller
                 $emaildata->eventname = $ticket->event->event_name;
                 $emaildata->date = $ticket->event->start_time;
                 $emaildata->venue = $ticket->event->venue;
+                $emaildata->totaltickets = $entry->amount;
                 $emaildata->sender = 'Laugh Industry';
                 $emaildata->receiver = $name;
 

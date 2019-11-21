@@ -5,11 +5,11 @@ Hello <i>{{ $sendmail->receiver }}</i>,
 <p>Payment Id:&nbsp;{{$sendmail->paymentid}}</p>
 <p><b>Ticket Type:</b>&nbsp;{{ $sendmail->tickettype }}</p>
 <p><b>Event Name:</b>&nbsp;{{ $sendmail->eventname }}</p>
+<p><b>Total tickets:</b>&nbsp;{{$sendmail->totaltickets}}</p>
 <p>To be held on:&nbsp;{{$sendmail->date}}</p>
 <p>Venue/Location:&nbsp;{{$sendmail->venue}}</p>
 </div>
  
-<p><u>Values passed by With method:</u></p>
  
 <div>
 
