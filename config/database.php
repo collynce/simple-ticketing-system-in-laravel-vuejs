@@ -45,9 +45,9 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
+            'url' => env('DATABASE_URL', 'db4free.net' ),
             'host' => env('DB_HOST', 'db4free.net'),
-            'port' => env('DB_PORT', '3306'),
+            'port' => env('DB_PORT', '5432),
             'database' => env('DB_DATABASE', 'laticket'),
             'username' => env('DB_USERNAME', 'laticket'),
             'password' => env('DB_PASSWORD', 'laticketapp'),
