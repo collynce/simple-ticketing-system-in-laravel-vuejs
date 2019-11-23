@@ -1,3 +1,5 @@
+DEMO: https://laticket.herokuapp.com/
+
 
 RUN THE FOLLOWING COMMANDS:
 
@@ -24,3 +26,6 @@ ADMIN LOGIN:
 For emails, set up the mail smtp config details to yours in .env or config/app.php file
 
 I have used mailtrap.io for emails
+
+
+DEMO: https://laticket.herokuapp.com/
