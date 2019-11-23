@@ -66,7 +66,7 @@
         <a :href="`/client/`+event.id" class="btn btn-primary">Buy Tickets</a>
       </small>
     </div>
-<nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example">
       <ul class="pagination">
         <li v-bind:class="[{disabled: !pagination.prev_page_url}]" class="page-item">
           <a class="page-link" href="#" @click="fetchEvents(pagination.prev_page_url)">Previous</a>
