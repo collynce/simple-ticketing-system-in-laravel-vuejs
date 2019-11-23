@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Str;
 
+$DATABASE_URL = parse_url('postgres://gbqcldtlhupgcv:8edf5dcd78e7d8ca529819bd426fafae6f416e9c7f52efc6ee25897ee36b8f65@ec2-174-129-253-53.compute-1.amazonaws.com:5432/df28hi3io94qrj');
+
 return [
 
     /*
@@ -11,11 +13,11 @@ return [
     |
     | Here you may specify which of the database connections below you wish
     | to use as your default connection for all database work. Of course
-    | you may use many connections at once using the Database library.
+    | you may use many connections at once using the Database library
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
