@@ -48,7 +48,7 @@ class EventsController extends Controller
     {
         $events = Events::create($request->all());
 
-        return redirect()->route('admin.events.index');
+        return redirect()->route('events.index');
     }
 
     /**
@@ -94,7 +94,7 @@ class EventsController extends Controller
 
 
 
-        return redirect()->route('admin.events.index');
+        return redirect()->route('events.index');
     }
 
     /**
@@ -108,6 +108,6 @@ class EventsController extends Controller
         $event = Events::findOrFail($id);
         $event->delete();
 
-        return redirect()->route('admin.events.index');
+        return redirect()->route('events.index');
     }
 }
